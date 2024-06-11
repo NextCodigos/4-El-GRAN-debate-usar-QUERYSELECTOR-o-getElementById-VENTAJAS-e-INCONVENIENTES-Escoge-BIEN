@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section id="seccion">
+      <div class="caja">1</div>
+      <div class="caja">2</div>
+      <div class="caja">3</div>
+      <div class="caja">4</div>
+   
+      
+    </section>
+
+    <!-- <script src="s/index.js"></script> -->
+    <script>
+      let cajas=document.getElementsByClassName("caja");
+      document.getElementById("seccion").innerHTML +=`
+      <h1 class="caja">${cajas.length}</h1>`;
+      document.getElementById("seccion").innerHTML +=`
+      <h1 class="caja">${cajas.length}</h1>`;
+    </script>
+  </body>
+</html>

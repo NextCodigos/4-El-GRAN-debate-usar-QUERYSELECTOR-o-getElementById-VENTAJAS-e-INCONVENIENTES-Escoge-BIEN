@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section id="seccion">
+      <div class="caja">1</div>
+      <div class="caja">2</div>
+      <div>3</div>
+      <div class="caja">4</div>
+      <div class="caja">
+        <div class="contenido">5</div>
+      </div>
+      
+    </section>
+
+    <!-- <script src="s/index.js"></script> -->
+    <script>
+        // Ejemplo1 borramos contenido dentro de seccion:
+        // document.getElementById("seccion").innerHTML=`Uno`
+
+        // Seleccion de class para cambiar contenido div dentro de seccion
+        // document.getElementsByClassName("caja")[1].innerHTML=`uno`
+
+        
+        // document.getElementsByTagName("div")[2].innerHTML=`dos`
+
+        // Borra selecciones anteriores,borra contenido dentro de seccion
+        // document.querySelector("#seccion").innerHTML=`Uno`
+        
+        // selecion por clase caja1,coje 1º:
+        document.querySelector(".caja").innerHTML=`Uno`
+        
+        document.querySelectorAll(".caja")[1].innerHTML=`Uno All`
+        
+        document.querySelectorAll("div")[2].innerHTML=`Seleccion por el tercer div`
+        
+        // Igual que el de abajo
+        document.querySelector(".caja .contenido").innerHTML=`Seleccion por div caja y dentro contenido`
+        
+        // Con getElementsByClassName:
+        // document.getElementsByClassName("caja")[3].getElementsByClassName("contenido")[0].innerHTML=`uno`
+
+        // minuto16
+    </script>
+  </body>
+</html>
